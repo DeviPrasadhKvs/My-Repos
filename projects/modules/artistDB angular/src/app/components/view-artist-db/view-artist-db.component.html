@@ -1,0 +1,23 @@
+<div id="header" class="header">
+    <div class="container">
+        <div class="innerHeader">
+            <h1 class="header_title">View Profile</h1>
+            <button class="logout"><i class="fa fa-power-off"></i></button>
+        </div>
+    </div>
+</div>
+<div class="mainWrapper">
+    <div class="container">
+        <div class="innerWrapper">
+            <div class="row">
+                <div class="col-sm-3" *ngIf="result.status===1">
+                    <div class="Col_uploadBox" *ngFor="let item of result.data">
+                        <img [src]="sanitize(item.location)" class="upload_Img">
+                        <a class="delete" (click)="deleteCallBack(item.id, item.name)"><i class="fa fa-trash"></i></a>
+                        <p class="uploadFile_Name">{{item.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

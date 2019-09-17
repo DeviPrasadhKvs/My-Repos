@@ -1,0 +1,277 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background: #ffffff;
+}
+
+#header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 100% 0% 0%;
+    width: 100%;
+    height: 150px;
+    background-color: #f2fafd;
+    right: 0px;
+    top: 80px;
+    box-shadow: -1px -2px 3px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.header_title {
+    font-size: 30px;
+    color: #02a0df;
+    font-weight: 600;
+    float: none;
+    margin-bottom: 0px !important;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.logout {
+    cursor: pointer;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid #02a0df;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 8px 8px 8px;
+    width: 30px;
+    background-color: #02a0df;
+    float: right;
+    position: absolute;
+    right: 200px;
+    top: 0px;
+}
+
+.logout:hover,
+.logout:focus {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.innerHeader {
+    padding-top: 19px;
+    width: 100%;
+    float: left;
+}
+
+.mainWrapper {
+    width: 100%;
+    background: #f2fafd;
+    height: calc(100vh - 150px);
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Col_uploadBox {
+    width: 100%;
+    background-color: #fff;
+    padding: 7px 7px 0px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: relative;
+    margin: 30px 0px 0px;
+}
+
+.upload_Img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+    border-radius: 7px 7px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.uploadFile_Name {
+    font-size: 15px;
+    color: #02a0df;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 5px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+.Col_uploadBox .delete {
+    position: absolute;
+    right: 7px;
+    background-color: #fff;
+    border-radius: 110px 0px 0px 0px;
+    bottom: 0px;
+    padding: 15px 10px 10px 22px;
+    text-align: center;
+    -webkit-transition: bottom .4s ease-in;
+    transition: bottom .4s ease-in;
+    z-index: 1;
+    color: #F00;
+}
+
+.Col_uploadBox .delete i {
+    color: #F00;
+}
+
+.Col_uploadBox:hover .delete {
+    bottom: 48px;
+    box-shadow: -1px 0px 3px rgba(2, 160, 223, 0.5);
+}
+
+
+/* listnav css */
+
+.tof_table_content .listNav {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    width: 3%;
+}
+
+.tof_table_content .listNav .ln-letters a {
+    border-width: 0px 0px 1px 1px !important;
+    text-align: center;
+    float: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #333 !important;
+    border-color: #dee2e6 !important;
+}
+
+.tof_table_content .listNav .ln-letters .ln-disabled {
+    color: #bbb !important;
+    cursor: not-allowed;
+}
+
+.tof_table_content .listNav .ln-letters .ln-disabled:hover,
+.tof_table_content .listNav .ln-letters .ln-disabled:focus {
+    color: #bbb !important;
+    background-color: #fff;
+}
+
+.tof_table_content .listNav .ln-letters a:hover,
+.tof_table_content .listNav .ln-letters .ln-selected {
+    background-color: #02a0df;
+    color: #fff !important;
+    border-color: #02a0df;
+}
+
+.tof_table_content .dataTables_filter {
+    padding: 0px 0px 0px 15px;
+}
+
+.tof_table_content .dataTables_length,
+.tof_table_content .dataTables_paginate {
+    padding: 0px 15px;
+}
+
+.tof_table_content .dataTables_info {
+    background-color: #02a0df;
+    color: #fff;
+    padding: 8px 20px !important;
+    border-radius: 0px 30px 30px 0px;
+    width: 320px;
+    margin-left: -2px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.tof_table_content .dataTables_filter label {
+    font-size: 0px;
+    position: relative;
+}
+
+.tof_table_content .dataTables_filter .form-control {
+    width: 50px !important;
+    height: 40px;
+    border-radius: 30px 0px 0px 30px !important;
+    -webkit-transition: width .4s ease-in;
+    transition: width .4s ease-in;
+    background-color: #02a0df;
+    border: 0px;
+    margin-right: -2px;
+    padding-left: 20px;
+    margin-left: 0px !important;
+}
+
+.tof_table_content .dataTables_filter label:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    right: 13px;
+    top: 7px;
+}
+
+.tof_table_content .dataTables_filter label:hover>.form-control,
+.tof_table_content .dataTables_filter label:focus>.form-control {
+    width: 250px !important;
+    padding-right: 40px;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #02a0df !important;
+    background-color: transparent;
+    border-right-width: 0px !important;
+}
+
+.tof_table_content .dataTables_filter label:hover:before,
+.tof_table_content .dataTables_filter label:focus:before {
+    color: #02a0df !important;
+}
+
+.tof_table_content .dataTables_filter label:hover,
+.tof_table_content .dataTables_filter label:focus,
+.tof_table_content .dataTables_filter label .form-control:hover,
+.tof_table_content .dataTables_filter label .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.tof_table_content .dataTables_length label {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.tof_table_content .page-link {
+    color: #02a0df;
+}
+
+.tof_table_content .page-item.active .page-link {
+    background-color: #02a0df;
+    border-color: #02a0df;
+}
+
+.tof_table_content .dataTables_paginate {
+    padding-right: 50px;
+}
+
+
+/* global scrollbar css */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+}

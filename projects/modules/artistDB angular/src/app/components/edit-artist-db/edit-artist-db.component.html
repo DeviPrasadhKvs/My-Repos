@@ -1,0 +1,82 @@
+<div id="header" class="header">
+    <div class="container">
+        <div class="innerHeader">
+            <h1 class="header_title">Edit Profile</h1>
+            <button class="logout"><i class="fa fa-power-off"></i></button>
+        </div>
+    </div>
+</div>
+<div class="mainWrapper">
+    <div class="container">
+        <div class="innerWrapper">
+            <form [action]="formAction" name="editform" method="POST" *ngIf="result.status===1">
+                <input type="hidden" name="id" [value]="result.data[0]._id" />
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="Edit_artistValues">
+                            <div class="form-group group_control">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="lbl_control">Name</label>
+                                        <input type="text" class="form-control textBox_control" name="name" [value]="result.data[0].name" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group group_control">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="lbl_control">Location</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].location" name="location" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group group_control">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="lbl_control">Website</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].website" name="website" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="lbl_control">E-mail</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].email" name="email" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group group_control">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="lbl_control">Facebook</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].facebook" name="facebook" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="lbl_control">Instagram</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].instagram" name="instagram" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group group_control">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="lbl_control">Twitter</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].twitter" name="twitter" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="lbl_control">Phone</label>
+                                        <input type="text" class="form-control textBox_control" [value]="result.data[0].phone" name="phone" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="blueBtn">Update</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<ul *ngIf="artistData">
+    <li *ngFor="let data of artistData">
+        <p>{{data.name}}</p>
+    </li>
+</ul>

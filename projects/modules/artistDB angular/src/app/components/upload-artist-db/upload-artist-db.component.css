@@ -1,0 +1,17 @@
+.file_dropBox {
+    background: #fff;
+    color: #02a0df;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 10px;
+    border: 2px dashed #02a0df;
+    box-shadow: 0 0 0 8px #ffffff, 0px 0px 6px 4px rgba(10, 10, 0, 0.5);
+    cursor: pointer;
+}
+
+.file_dropBox.dragover {
+    background: #00CC71;
+    color: #fff;
+    border: 2px dashed #0f0;
+}
