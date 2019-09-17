@@ -1,0 +1,54 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("1.jpg");
+  background-size: cover;
+}
+.main-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.main-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 1px solid #4caf50;
+  margin-bottom: 100px;
+  padding: 130px 0;
+}
+.field{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  /* border-bottom: 1px solid #4caf50; */
+}
+.field i{
+  width: 20px;
+  float: left;
+  text-align: center;
+}
+.field input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.button{
+  width: 100%;
+  background: none;
+  border: 2px solid #2088ce;
+  color: rgb(25, 144, 173);
+  padding: 2px;
+  font-size: 18px;
+}
