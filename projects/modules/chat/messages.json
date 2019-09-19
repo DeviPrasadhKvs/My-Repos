@@ -1,6 +1,9 @@
 {
-    "AO1":{
-        "message":"HELLO, HOW ARE YOU",
-        "path":"AO2"
+    "AO1": {
+        "message": "Hello, may I know your profileId?",
+        "path": "AO2"
+    },
+    "AO2": {
+        "message": ""
     }
 }

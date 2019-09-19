@@ -1,6 +1,5 @@
 {
-    "greet":"Hello, welcome sexy!!!",
-    "init":"who you are@&buyer,&seller",
-    "reportprofile":{
-        ""
-    }
+    "greet": "Hello, welcome !!!",
+    "init": "Are you a @&buyer/&seller",
+    "reportprofile": {}
+}
