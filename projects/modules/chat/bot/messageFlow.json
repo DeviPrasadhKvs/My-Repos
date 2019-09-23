@@ -23,6 +23,7 @@
     "A04": {
         "code": "A04",
         "shortmessage": "Issue",
-        "message": "Please enter your issue message, we will get back to you with a Resolution for your Query!"
+        "message": "Please enter your issue message, we will get back to you with a Resolution for your Query!",
+        "input":true
     }
 }
