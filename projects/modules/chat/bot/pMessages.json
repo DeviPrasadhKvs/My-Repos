@@ -71,5 +71,41 @@
         "code": "A11",
         "input": true,
         "shortName": "describe"
+    },
+    "A12": {
+        "message": "report",
+        "code": "A12",
+        "input": true,
+        "shortName": "report"
+    },
+    "A13": {
+        "message": "collaboration",
+        "code": "A13",
+        "input": true,
+        "shortName": "collaboration"
+    },
+    "A14": {
+        "message": "transaction",
+        "code": "A14",
+        "input": true,
+        "shortName": "transaction"
+    },
+    "A15": {
+        "message": "describe",
+        "code": "A15",
+        "input": true,
+        "shortName": "describe"
+    },
+    "A16": {
+        "message": "profile_describe",
+        "code": "A16",
+        "input": true,
+        "shortName": "profile_describe"
+    },
+    "A17": {
+        "message": "listing_describe",
+        "code": "A17",
+        "input": true,
+        "shortName": "listing_describe"
     }
 }

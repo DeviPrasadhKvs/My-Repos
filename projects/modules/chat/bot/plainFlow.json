@@ -12,7 +12,7 @@
     "raise": ["&report", "&collaboration", "&transaction", "&access"],
     "describe": ["&details!"],
     "report": ["&profile!_describe!", "&listing!_describe!"],
-    "collaboration": ["&launch", "&raise!"],
+    "collaboration": ["&launch", "&raise"],
     "transaction": ["&transaction!"],
     "launch": ["$flow#"]
 }
