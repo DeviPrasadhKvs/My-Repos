@@ -1,5 +1,5 @@
-let flow = require('./flow.json')
-let messageLinker = require('./messageFlow.json')
+let flow = require('./newFlow.json')
+let messageLinker = require('./newMessages.json')
 
 module.exports = (app) => {
 

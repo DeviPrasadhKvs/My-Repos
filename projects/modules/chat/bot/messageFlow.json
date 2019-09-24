@@ -17,8 +17,8 @@
     "A03": {
         "code": "A03",
         "shortmessage": "Search",
-        "message": "Please enter your search data.",
-        "input": true
+        "message": "Please enter your search data."
+
     },
     "A04": {
         "code": "A04",
