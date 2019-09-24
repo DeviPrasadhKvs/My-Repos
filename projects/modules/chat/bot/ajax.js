@@ -30,18 +30,17 @@ module.exports = (app, page) => {​
 
 
 $.ajax({
-        url: url,
-        data: updateReq,
-        type: "GET",
-        success: function(dd) {
-            var table = document.getElementByID('')
-            dd.forEach(k => {
-                        var element = document.createElement('tr')
-                        element.innerHTML = '<td>' + k.name + '</td>
+            url: url,
+            data: updateReq,
+            type: "GET",
+            success: function(dd) {
+                var table = document.getElementByID('')
+                dd.forEach(k => {
+                            var element = document.createElement('tr')
+                            element.innerHTML = '<td>' + k.name + '</td>
+                        }
+                    },
+                    error: function(data) {
+                        log(data)
                     }
-                },
-                error: function(data) {
-                    log(data)
-                }
-        });
-}
+            });

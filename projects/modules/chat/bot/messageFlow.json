@@ -6,12 +6,12 @@
     },
     "A01": {
         "code": "A01",
-        "shortmessage": "Buyer",
+        "shortmessage": "I'm Buyer",
         "message": "I'm a Buyer."
     },
     "A02": {
         "code": "A02",
-        "shortmessage": "Seller",
+        "shortmessage": "I'm Seller",
         "message": "I'm a Seller."
     },
     "A03": {
@@ -24,6 +24,6 @@
         "code": "A04",
         "shortmessage": "Issue",
         "message": "Please enter your issue message, we will get back to you with a Resolution for your Query!",
-        "input":true
+        "input": true
     }
 }
