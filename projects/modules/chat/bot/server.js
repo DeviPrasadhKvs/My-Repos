@@ -15,7 +15,7 @@ var chatController = require('./chatController')
 chatController(app)
 
 // initDB(() => {
-app.listen(4010, (err, res) => {
+app.listen(5000, (err, res) => {
     console.log('Connected');
 })
 

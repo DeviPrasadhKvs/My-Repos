@@ -7,7 +7,7 @@
     <script>
         function chat(route) {
             $.ajax({
-                url: 'http://localhost:4010/chat/' + route,
+                url: '/chat/' + route,
                 type: "GET",
                 success: function(d) {
                     console.log(d);
