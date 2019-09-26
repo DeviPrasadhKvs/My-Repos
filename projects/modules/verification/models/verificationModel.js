@@ -3,29 +3,14 @@ const Schema = mongoose.Schema;
 
 const checkDbModel = new Schema({
 
-    profileID: {
+    profileId: {
         type: String
     },
-    profilePhoto: {
+    profileImage: {
         type: String
     },
-    email: {
-        type: String
-    },
-    contactNumber: {
-        type: Number
-    },
-    city: {
-        type: String
-    },
-    country: {
-        type: String
-    },
-    address: {
-        type: String
-    },
-    website: {
-        type: String
+    profileStatus: {
+        type: Boolean
     }
 });
 

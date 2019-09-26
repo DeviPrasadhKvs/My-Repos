@@ -5,7 +5,7 @@ module.exports = (callback => {
     callback(db);
     let mydb = mongoose.connection;
     mydb.once('open', (data) => {
-        console.log('connected');
+        console.log('Database Connection Established');
     })
     mydb.on('error', console.error.bind(console, 'Error with Mongo connection'));
 });

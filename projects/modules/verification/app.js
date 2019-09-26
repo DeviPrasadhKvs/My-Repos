@@ -9,6 +9,10 @@ var checkController = require('./checkController')
 var checkDb = require('./models/verificationModel')
 checkController(app, checkDb);
 
+app.get('/', (req, res) => {
+    res.send('Server Connected')
+})
+
 initDB(() => {
     app.listen(4050, (err, res) => {
         console.log('Connected');
