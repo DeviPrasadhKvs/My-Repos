@@ -19,8 +19,25 @@ module.exports = (app, checkDb) => {
             })
         })
     });
+    
+    app.get('/fetch/:id/', (req, res) => {
+        // console.log(req.query);
+        var profileId = req.params.id
+        checkDb.findOne({profileId: profileId}).then((data, err) => {
+            if (data != null) {
+                res.send(data)
+            } else {
+                res.send('null')
+            }
+        }).catch(error => {
+            console.log(error);
+            res.status(500).json({
+                code: 'failure'
+            })
+        })
+    });
 
-    app.get('/approve/:id', (req, res) => {
+    app.get('/accept/:id', (req, res) => {
         console.log(req.body);
         checkDb.findOneAndUpdate({ profileId: req.params.id }, { profileStatus: true })
             .then((data, err) => {
@@ -41,7 +58,7 @@ module.exports = (app, checkDb) => {
             })
     })
 
-    app.get('/disapprove/:id', (req, res) => {
+    app.get('/reject/:id', (req, res) => {
         console.log(req.body);
         checkDb.findOneAndUpdate({ profileId: req.params.id }, { profileStatus: false })
             .then((data, err) => {
