@@ -19,11 +19,11 @@ module.exports = (app, checkDb) => {
             })
         })
     });
-    
+
     app.get('/fetch/:id/', (req, res) => {
         // console.log(req.query);
         var profileId = req.params.id
-        checkDb.findOne({profileId: profileId}).then((data, err) => {
+        checkDb.findOne({ profileId: profileId }).then((data, err) => {
             if (data != null) {
                 res.send(data)
             } else {

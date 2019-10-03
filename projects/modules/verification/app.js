@@ -9,9 +9,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 var checkController = require('./checkController')
+    // var idVerificationController = require('./idVerificationController')
 var checkDb = require('./models/verificationModel')
 
 checkController(app, checkDb);
+// idVerificationController(app);
 
 app.get('/', (req, res) => {
     res.send('Server Connected')
@@ -27,6 +29,6 @@ initDB(() => {
     app.get('/index', (req, res) => {
         // res.status(200).send('Server is up and running');
         // res.sendFile('index1');
-        res.sendFile(__dirname + '/index.html');
+        res.sendFile(__dirname + '/index1.html');
     });
 });
