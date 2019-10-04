@@ -7,14 +7,14 @@
 <body>
     <h1>Verification</h1>
     <input type="text" name="name" id="identification">
-    <input type="text" name="id" id="profileId">
-    <input type="button" name="btn" value="Get Identification Details" onclick="details()">
-    <input type="button" name="" value="Approve" onclick="approve()">
-    <input type="button" name="" value="Reject" onclick="reject()">
-    <input type="button" name="" value="Get Unverified Profiles" onclick="getUnverifiedProfiles()">
+    <input type="text" id="profileId"></div>
+    <button onclick="details()">Get Identification Details</button><br>
+    <button onclick="approve()">Approve Identification</button><br>
+    <button onclick="reject()">Reject Identification</button><br>
+    <button onclick="getUnverifiedProfiles()">Get Unverified Profiles</button><br>
     <script>
         function details() {
-            var name = document.getElementById('identification').value
+            // var name = document.getElementById('identification').value
             var id = document.getElementById('profileId').value
 
             $.ajax({
@@ -34,7 +34,7 @@
         }
 
         function approve() {
-            var name = document.getElementById('identification').value
+            // var name = document.getElementById('identification').value
             var id = document.getElementById('profileId').value
 
             $.ajax({
@@ -53,7 +53,7 @@
         }
 
         function reject() {
-            var name = document.getElementById('identification').value
+            // var name = document.getElementById('identification').value
             var id = document.getElementById('profileId').value
 
             $.ajax({
@@ -71,7 +71,7 @@
         function getUnverifiedProfiles() {
             console.log('demo');
 
-            var name = document.getElementById('identification').value
+            // var name = document.getElementById('identification').value
             var id = document.getElementById('profileId').value
 
             $.ajax({
